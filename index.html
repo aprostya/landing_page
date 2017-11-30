@@ -3,33 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="Судьба планеты ангелов в твоих руках! Древнее зло вырвалось из глубины преисподней,и лишь вмешательство героя спасет этот мир!">
+    <meta name="description"
+          content="Судьба планеты ангелов в твоих руках! Древнее зло вырвалось из глубины преисподней,и лишь вмешательство героя спасет этот мир!">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <script type="javascript" src="js/jquery.js" async></script>
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <script src="js/image-change.js" async></script>
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
     <title>Лига героев</title>
 </head>
 <body>
 <main class="main-content">
-    <header class="m-page-header">
-        <div class="m-page-header__wrapper">
-            <section class="m-page-header__img-container">
-                <h2 class="page-header__header-text visually-hidden">Лига ангелов 2 - браузерная игра</h2>
-                <img src="img/league-angel.png" alt="Возглавь непобедимую армию и спаси мир в бесплатной браузерной игре!">
-            </section>
-        </div>
-    </header>
-    <section class="play-button">
-        <h2 class="play-button__text visually-hidden">Кнопка ссылка на игру</h2>
-        <div class="play-button__wrapper">
-        <a href="#"><img src="" alt="Ссылка на игру"></a>
-        </div>
-    </section>
-    <section class="m-page-descr">
-        <h2 class="m-page-descr__text visually-hidden">Промо-текст к игре</h2>
-        <div class="wrapper">
-            <p class = "m-page-descr__text">Судьба планеты ангелов в твоих руках! Древнее зло вырвалось из глубины преисподней,
-                и лишь вмешательство героя спасет этот мир! Все зависит от твоих решений!
-            </p>
-        </div>
-    </section>
+    <div class="main-content__wrapper">
+        <header class="m-page-header">
+            <div class="m-page-header__wrapper">
+                <section class="m-page-header__img-container">
+                    <h2 class="page-header__header-text visually-hidden">Лига ангелов 2 - браузерная игра</h2>
+                    <img src="img/1_HEADER_logo.png"
+                         alt="Возглавь непобедимую армию и спаси мир в бесплатной браузерной игре!">
+                </section>
+            </div>
+        </header>
+        <section class="game-info">
+            <h2 class="game-info__text visually-hidden">Описание игры</h2>
+            <div class="game-info__wrapper">
+                <img src="img/1_HEADER_head.png"
+                     alt="Возглавь непобедимую армию и спаси мир в бесплатной браузерной MMORPG!">
+            </div>
+        </section>
+        <section class="play-button">
+            <h2 class="play-button__text visually-hidden">Кнопка ссылка на игру</h2>
+            <div class="play-button__wrapper">
+                <a href="#" class="play-button__href"></a>
+            </div>
+        </section>
+        <section class="m-page-descr">
+            <h2 class="m-page-descr__text visually-hidden">Промо-текст к игре</h2>
+            <div class="m-page-descr__wrapper">
+                <p class="m-page-descr__text">Судьба планеты ангелов в твоих руках! Древнее зло вырвалось из глубины
+                    <br>преисподней,
+                    и лишь вмешательство героя спасет этот мир!<br>Все зависит только от твоих решений!
+                </p>
+                <nav class="next-slide-btn next-slide-btn--down"></nav>
+            </div>
+        </section>
+    </div>
 </main>
+<section class="personal-card">
+    <h2 class="personal-card__text visually-hidden">Описание персонажа Изольда</h2>
+    <div class="personal-card__wrapper">
+        <div class="pers-card-logo">
+            <div class="pers-card-logo__img-container">
+                <img src="../img/2_CHARS_head.png" alt="Уникальные персонажи и сотни комбо">
+            </div>
+        </div>
+        <section class="personal-info-block">
+            <div class="personal-info-block__wrapper">
+                <div class="personal-info-block__img-container">
+                    <img src="img/2_CHARS_name_Isolda.png" alt="Изольда королева холода">
+                </div>
+                <div class="pers-class-block">
+                <p class="pers-class-text">Империя бессмертных</p>
+                <div class="pers-descr">
+                    <p class="pers-descr__text">Появление королевы холода и ее верного медведя предвещает ледяная буря.
+                        Неуязвимая Изольда замораживает противников насмерть и не знает пощады.
+                    </p>
+                </div>
+                <div class="pers-perks pers-perks--winter">
+                    <h3 class="pers-perks__header">Конец зимы</h3>
+                    <p class="pers-perks__text">360% урона авангарду врага</p>
+                </div>
+                <div class="pers-perks pers-perks--frozen-aria">
+                    <h3 class="pers-perks__header">Морозная ария</h3>
+                    <p class="pers-perks__text">Ледяной щит уменьшает получаемый <br>урон на 20%</p>
+                </div>
+            </div>
+            </div>
+            <section class="pers-container-icons">
+                <div class="pers-container-icons__wrapper">
+                    <div class="pers-icon pers-icon--one">
+                    </div>
+                    <div class="pers-icon pers-icon--two">
+                    </div>
+                    <div class="pers-icon pers-icon--three">
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="m-page-descr">
+            <h2 class="m-page-descr__text visually-hidden">Промо-текст к описанию персонажа</h2>
+            <div class="m-page-descr__wrapper">
+                <p class="m-page-descr__text">60 наемников с неповторимой историей и сотни возможностей для построения
+                    команды ждут тебя! Система связей между персонажами — важная часть игрового сюжета и тонкий механизм
+                    настройки боевого отряда. Выбери свою фракцию и получай бонусы к мощи!
+                </p>
+                <a href="#" class="next-slide-btn"></a>
+            </div>
+        </section>
+    </div>
+</section>
 </body>
 </html>

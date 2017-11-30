@@ -1,0 +1,64 @@
+.play-button {
+  display: flex;
+  height: auto;
+  flex-direction: row;
+  height: 187px;
+  &__wrapper {
+    margin: 0 auto;
+  }
+}
+
+.play-button__href {
+  position: relative;
+  width: 495px;
+  height: 188px;
+  display: block;
+  margin: 0 auto;
+  &:before {
+    content: "";
+    background-image: url("../img/BTN_play_normal.png");
+    background-repeat: no-repeat;
+    width: 497px;
+    height: 217px;
+    position: absolute;
+    top: -28px;
+    left: -9%;
+  }
+    &:hover:before {
+      content: "";
+      background-image: url("../img/BTN_play_hover.png");
+    }
+    &:active:before {
+      content: "";
+      background-image: url("../img/BTN_play_active.png");
+    }
+  }
+
+.next-slide-btn {
+  width: 88px;
+  height: 50px;
+  margin: 0 auto;
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/BTN_scroll_normal.png");
+    width: 88px;
+    height: 50px;
+    left: 0;
+  }
+  &:hover:before {
+    content: " ";
+    background-image: url("../img/BTN_scroll_hover.png");
+    width: 88px;
+    height: 50px;
+    position: absolute;
+  }
+  &:active:before {
+    content: "";
+    background-image: url("../img/BTN_scroll_active.png");
+    width: 88px;
+    height: 50px;
+    position: absolute;
+  }
+}

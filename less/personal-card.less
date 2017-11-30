@@ -1,0 +1,71 @@
+.personal-card {
+  display: block;
+  background-image: url("../img/2_CHARS_bg_Isolda.jpg");
+  background-color: #0d3349;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  &__wrapper {
+    margin: 0 auto;
+    max-width: 960px;
+  }
+}
+
+.pers-card-logo {
+  width: 100%;
+  display: flex;
+  &__img-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    img {
+      max-width: 100%;
+      width: auto;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
+
+.personal-info-block {
+  display: flex;
+  flex-direction: row;
+  &__wrapper {
+    width: 50%;
+    text-align: left;
+  }
+  &__img-container {
+    width: 100%;
+    height: 132px;
+    margin-top: -40px;
+  }
+}
+
+.pers-class-text {
+  font-size: 21px;
+  color: rgb(255, 50, 58);
+  line-height: 1.333;
+  text-align: left;
+  text-shadow: 0 5px 30px rgba(35, 27, 32, 0.004);
+  position: relative;
+  padding-left: 46px;
+
+  &:before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/2_CHARS_fraction_Isolda.png");
+    position: absolute;
+    background-repeat: no-repeat;
+    left: 0;
+  }
+}
+
+.pers-class-block {
+  padding-left: 43px;
+}
