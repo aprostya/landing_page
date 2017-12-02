@@ -1,0 +1,508 @@
+.m-page-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 300px;
+}
+.m-page-header__wrapper {
+  margin: 0 auto;
+}
+.m-page-header__img-container {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.m-page-header img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  display: block;
+}
+.main-content {
+  display: block;
+  background-image: url("../img/1_HEADER_bg.jpg");
+  background-color: #0d3349;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.main-content__wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.game-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.game-info__wrapper {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.game-info img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.play-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 187px;
+}
+.play-button__wrapper {
+  margin: 0 auto;
+}
+.play-button__href {
+  position: relative;
+  width: 495px;
+  height: 188px;
+  display: block;
+  margin: 0 auto;
+}
+.play-button__href:before {
+  content: "";
+  background-image: url("../img/BTN_play_normal.png");
+  background-repeat: no-repeat;
+  width: 497px;
+  height: 217px;
+  position: absolute;
+  top: -28px;
+  left: -9%;
+}
+.play-button__href:hover:before {
+  content: "";
+  background-image: url("../img/BTN_play_hover.png");
+}
+.play-button__href:active:before {
+  content: "";
+  background-image: url("../img/BTN_play_active.png");
+}
+.next-slide-btn {
+  width: 88px;
+  height: 50px;
+  margin: 0 auto;
+  position: relative;
+}
+.next-slide-btn:before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/BTN_scroll_normal.png");
+  width: 88px;
+  height: 50px;
+  left: 0;
+}
+.next-slide-btn:hover:before {
+  content: " ";
+  background-image: url("../img/BTN_scroll_hover.png");
+  width: 88px;
+  height: 50px;
+  position: absolute;
+}
+.next-slide-btn:active:before {
+  content: "";
+  background-image: url("../img/BTN_scroll_active.png");
+  width: 88px;
+  height: 50px;
+  position: absolute;
+}
+.next-slide-btn--next {
+  height: 88px;
+  position: absolute;
+  top: 34%;
+  left: 0;
+}
+.next-slide-btn--next:before {
+  content: "";
+  position: absolute;
+  width: 88px;
+  height: 88px;
+  left: 0;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.next-slide-btn--next:hover:before {
+  content: " ";
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  height: 88px;
+}
+.next-slide-btn--next:active:before {
+  content: "";
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  height: 88px;
+}
+.next-slide-btn--preview {
+  height: 88px;
+  position: absolute;
+  right: 0;
+  top: 34%;
+}
+.next-slide-btn--preview:before {
+  content: "";
+  position: absolute;
+  width: 88px;
+  height: 88px;
+  left: 0;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+.next-slide-btn--preview:hover:before {
+  content: " ";
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  height: 88px;
+}
+.next-slide-btn--preview:active:before {
+  content: "";
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  height: 88px;
+}
+.m-page-descr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 24px;
+  color: #eeeeee;
+  line-height: 1.5;
+  text-align: center;
+}
+.m-page-descr__wrapper {
+  margin: 0 auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.m-page-descr__text {
+  width: 100%;
+  z-index: 13;
+  display: block;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.cards-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 5696px;
+  overflow: hidden;
+}
+.personal-card {
+  display: inline-block;
+  background-color: #0d3349;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.personal-card__wrapper {
+  margin: 0 auto;
+  max-width: 960px;
+}
+.personal-card--one {
+  display: block;
+  background-image: url("../img/2_CHARS_bg_Isolda.jpg");
+}
+.personal-card--two {
+  display: block;
+  background-image: url("../img/2_CHARS_bg_Pamela.jpg");
+}
+.personal-card--three {
+  display: block;
+  background-image: url("../img/2_CHARS_bg_Lleyn.jpg");
+}
+.pers-card-logo {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.pers-card-logo__img-container {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 5px;
+}
+.pers-card-logo__img-container img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.personal-info-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+}
+.personal-info-block__wrapper {
+  width: 50%;
+  text-align: left;
+}
+.personal-info-block__img-container {
+  width: 100%;
+  height: 132px;
+  margin-top: -40px;
+}
+.pers-class-text {
+  font-size: 21px;
+  color: #ff323a;
+  line-height: 1.333;
+  text-align: left;
+  text-shadow: 0 5px 30px rgba(35, 27, 32, 0.004);
+  position: relative;
+  padding-left: 46px;
+}
+.pers-class-text:before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/2_CHARS_fraction_Isolda.png");
+  position: absolute;
+  background-repeat: no-repeat;
+  left: 0;
+}
+.pers-class-text--purple {
+  color: #ca86ff;
+}
+.pers-class-text--purple:before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/2_CHARS_fraction_Pamela.png");
+  position: absolute;
+  background-repeat: no-repeat;
+  left: 0;
+}
+.pers-class-text--yellow {
+  color: #ffc419;
+}
+.pers-class-text--yellow:before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/2_CHARS_fraction_Lleyn.png");
+  position: absolute;
+  background-repeat: no-repeat;
+  left: 0;
+}
+.pers-class-block {
+  padding-left: 43px;
+}
+.pers-descr__text {
+  font-size: 24px;
+  color: #f9f4e9;
+  line-height: 1.5;
+  text-align: left;
+  text-shadow: 0 5px 30px rgba(35, 27, 32, 0.004);
+}
+.pers-perks {
+  padding-left: 77px;
+  position: relative;
+}
+.pers-perks--winter:before {
+  content: "";
+  background-image: url("../img/2_CHARS_skill_Isolda_1.png");
+  background-repeat: no-repeat;
+  width: 58px;
+  height: 58px;
+  position: absolute;
+  left: 0;
+}
+.pers-perks--black-breath::before {
+  content: "";
+  background-image: url("../img/2_CHARS_skill_Pamela_1.png");
+  background-repeat: no-repeat;
+  width: 58px;
+  height: 58px;
+  position: absolute;
+  left: 0;
+}
+.pers-perks--frozen-aria:before {
+  content: "";
+  background-image: url("../img/2_CHARS_skill_Isolda_2.png");
+  background-repeat: no-repeat;
+  width: 58px;
+  height: 58px;
+  position: absolute;
+  left: 0;
+}
+.pers-perks--curse-dragon:before {
+  content: "";
+  background-image: url("../img/2_CHARS_skill_Pamela_2.png");
+  background-repeat: no-repeat;
+  width: 58px;
+  height: 58px;
+  position: absolute;
+  left: 0;
+}
+.pers-perks--wild-cut:before {
+  content: "";
+  background-image: url("../img/2_CHARS_skill_Lleyn_1.png");
+  background-repeat: no-repeat;
+  width: 58px;
+  height: 58px;
+  position: absolute;
+  left: 0;
+}
+.pers-perks--find-and-kill:before {
+  content: "";
+  background-image: url("../img/2_CHARS_skill_Lleyn_2.png");
+  background-repeat: no-repeat;
+  width: 58px;
+  height: 58px;
+  position: absolute;
+  left: 0;
+}
+.pers-perks__header {
+  font-size: 24px;
+  font-family: "Lora";
+  color: #f9f4e9;
+  line-height: 1.5;
+  text-align: left;
+  margin-bottom: 0;
+}
+.pers-perks__text {
+  font-size: 16px;
+  color: #bcbec1;
+  line-height: 1.25;
+  text-align: left;
+  margin-top: 0;
+}
+.pers-container-icons {
+  width: 50%;
+  height: auto;
+}
+.pers-container-icons__wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: auto;
+}
+.pers-icon {
+  position: relative;
+  margin-left: auto;
+  margin-bottom: 23px;
+  cursor: pointer;
+}
+.pers-icon--one {
+  width: 140px;
+  height: 139px;
+}
+.pers-icon--one:before {
+  content: " ";
+  background-image: url("../img/2_CHARS_icon_Isolda_inactive.png");
+  width: 140px;
+  height: 139px;
+  position: absolute;
+}
+.pers-icon--one:hover:before {
+  background-image: url("../img/2_CHARS_icon_Isolda_hover.png");
+}
+.pers-icon--one:active:before {
+  background-image: url("../img/2_CHARS_icon_Isolda_active.png");
+}
+.pers-icon--two {
+  width: 140px;
+  height: 139px;
+}
+.pers-icon--two:before {
+  content: " ";
+  background-image: url("../img/2_CHARS_icon_Pamela_inactive.png");
+  width: 140px;
+  height: 139px;
+  position: absolute;
+}
+.pers-icon--two:hover:before {
+  background-image: url("../img/2_CHARS_icon_Pamela_hover.png");
+}
+.pers-icon--two:active:before {
+  background-image: url("../img/2_CHARS_icon_Pamela_active.png");
+}
+.pers-icon--three {
+  width: 140px;
+  height: 139px;
+}
+.pers-icon--three:before {
+  content: " ";
+  background-image: url("../img/2_CHARS_icon_Lleyn_inactive.png");
+  width: 140px;
+  height: 139px;
+  position: absolute;
+}
+.pers-icon--three:hover:before {
+  background-image: url("../img/2_CHARS_icon_Lleyn_hover.png");
+}
+.pers-icon--three:active:before {
+  background-image: url("../img/2_CHARS_icon_Lleyn_active.png");
+}
+html,
+body {
+  height: auto;
+  overflow-x: hidden;
+  min-width: 900px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 24px;
+  font-family: "Lora", Arial, Helvetica, sans-serif;
+  color: #eeeeee;
+}
+.visually-hidden {
+  display: none;
+}
