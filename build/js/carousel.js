@@ -21,4 +21,5 @@ function  moved() {
     $buttons.removeClass('active').removeAttr('disabled');
     $('.pers-container-icons__wrapper').find('[data-slide="'+owl.currentItem +'"]').addClass('active').attr('disabled', 'disabled');
 }
+
 });

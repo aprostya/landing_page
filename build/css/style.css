@@ -495,7 +495,6 @@
 html,
 body {
   height: auto;
-  overflow-x: hidden;
   min-width: 900px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
