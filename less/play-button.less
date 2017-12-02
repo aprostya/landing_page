@@ -24,15 +24,15 @@
     top: -28px;
     left: -9%;
   }
-    &:hover:before {
-      content: "";
-      background-image: url("../img/BTN_play_hover.png");
-    }
-    &:active:before {
-      content: "";
-      background-image: url("../img/BTN_play_active.png");
-    }
+  &:hover:before {
+    content: "";
+    background-image: url("../img/BTN_play_hover.png");
   }
+  &:active:before {
+    content: "";
+    background-image: url("../img/BTN_play_active.png");
+  }
+}
 
 .next-slide-btn {
   width: 88px;
@@ -60,5 +60,55 @@
     width: 88px;
     height: 50px;
     position: absolute;
+  }
+}
+
+.next-slide-btn--next {
+  height: 88px;
+  position: absolute;
+  top: 34%;
+  left: 0;
+  &:before {
+    content: "";
+    position: absolute;
+    width: 88px;
+    height: 88px;
+    left: 0;
+    transform: rotate(90deg);
+  }
+  &:hover:before {
+    content: " ";
+    transform: rotate(90deg);
+    height: 88px;
+  }
+  &:active:before {
+    content: "";
+    transform: rotate(90deg);
+    height: 88px;
+  }
+}
+
+.next-slide-btn--preview {
+  height: 88px;
+  position: absolute;
+  right: 0;
+  top: 34%;
+  &:before {
+    content: "";
+    position: absolute;
+    width: 88px;
+    height: 88px;
+    left: 0;
+    transform: rotate(-90deg);
+  }
+  &:hover:before {
+    content: " ";
+    transform: rotate(-90deg);
+    height: 88px;
+  }
+  &:active:before {
+    content: "";
+    transform: rotate(-90deg);
+    height: 88px;
   }
 }
