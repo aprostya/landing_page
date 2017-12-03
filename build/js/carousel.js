@@ -10,9 +10,12 @@ $(".cards-container").owlCarousel({
     afterMove: moved
 });
 $('.pers-container-icons__wrapper').on('click', 'div', function() {
-    var $this = $(this);
+    // var $this = $(this);
+    console.log("move fired");
     var slideNum = $(this).data('slide');
-    $(".cards-container").trigger('owl.goTo'.slideNum);
+    console.log("slidenum:" + slideNum);
+    // $(".cards-container").trigger('owl.goTo'.slideNum);
+    $(".cards-container").trigger('owl.goTo', slideNum);
 });
 
 function  moved() {
@@ -22,4 +25,20 @@ function  moved() {
     $('.pers-container-icons__wrapper').find('[data-slide="'+owl.currentItem +'"]').addClass('active').attr('disabled', 'disabled');
 }
 
+});
+
+$(document).ready(function() {
+
+    $("#pers-carousel").owlCarousel({
+        nav: true,
+        navText : ["<nav class='next-slide-btn next-slide-btn--next owl-prev'></nav>", "<nav class='next-slide-btn next-slide-btn--preview owl-next'></nav>"],
+        slideSpeed : 300,
+        paginationSpeed : 400,
+        items : 1,
+        itemsDesktop : false,
+        itemsDesktopSmall : false,
+        itemsTablet: false,
+        itemsMobile : false,
+        loop: true
+    });
 });

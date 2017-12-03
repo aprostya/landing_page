@@ -12,6 +12,7 @@
             src="https://code.jquery.com/jquery-3.2.1.min.js"
             integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
             crossorigin="anonymous"></script>
+    <script src="js/video.js" async></script>
     <script src="js/owl.carousel.min.js" async></script>
     <script src="node_modules/owl.carousel/dist/owl.carousel.min.js" async></script>
     <script src="js/image-change.js" async></script>
@@ -48,73 +49,71 @@
             <h2 class="m-page-descr__text visually-hidden">Промо-текст к игре</h2>
             <div class="m-page-descr__wrapper">
                 <p class="m-page-descr__text">Судьба планеты ангелов в твоих руках! Древнее зло вырвалось из глубины
-                    <br>преисподней,
-                    и лишь вмешательство героя спасет этот мир!<br>Все зависит только от твоих решений!
+                    <br>преисподней, и лишь вмешательство героя спасет этот мир!<br>Все зависит только от твоих решений!
                 </p>
                 <nav class="next-slide-btn next-slide-btn--down"></nav>
             </div>
         </section>
     </div>
 </main>
-<section class="cards-container owl-carousel">
-<section class="personal-card personal-card--one owl-slide">
-    <nav class="next-slide-btn next-slide-btn--preview owl-prev"></nav>
-    <nav class="next-slide-btn next-slide-btn--next owl-next"></nav>
-    <h2 class="personal-card__text visually-hidden">Описание персонажа Изольда</h2>
-    <div class="personal-card__wrapper">
-        <div class="pers-card-logo">
-            <div class="pers-card-logo__img-container">
-                <img src="../img/2_CHARS_head.png" alt="Уникальные персонажи и сотни комбо">
-            </div>
-        </div>
-        <section class="personal-info-block">
-            <div class="personal-info-block__wrapper">
-                <div class="personal-info-block__img-container">
-                    <img src="img/2_CHARS_name_Isolda.png" alt="Изольда королева холода">
+<div id="pers-carousel" class="owl-carousel owl-theme">
+    <div class="item personal-card personal-card--one">
+        <div class="personal-card__wrapper">
+            <!--<div class="personal-card__wrapper">-->
+            <div class="pers-card-logo">
+                <div class="pers-card-logo__img-container">
+                    <img src="../img/2_CHARS_head.png" alt="Уникальные персонажи и сотни комбо">
                 </div>
-                <div class="pers-class-block">
-                <p class="pers-class-text">Империя бессмертных</p>
-                <div class="pers-descr">
-                    <p class="pers-descr__text">Появление королевы холода и ее верного медведя предвещает ледяная буря.
-                        Неуязвимая Изольда замораживает противников насмерть и не знает пощады.
+            </div>
+            <section class="personal-info-block">
+                <div class="personal-info-block__wrapper">
+                    <div class="personal-info-block__img-container">
+                        <img src="img/2_CHARS_name_Isolda.png" alt="Изольда королева холода">
+                    </div>
+                    <div class="pers-class-block">
+                        <p class="pers-class-text">Империя бессмертных</p>
+                        <div class="pers-descr">
+                            <p class="pers-descr__text">Появление королевы холода и ее верного медведя предвещает
+                                ледяная буря.
+                                Неуязвимая Изольда замораживает противников насмерть и не знает пощады.
+                            </p>
+                        </div>
+                        <div class="pers-perks pers-perks--winter">
+                            <h3 class="pers-perks__header">Конец зимы</h3>
+                            <p class="pers-perks__text">360% урона авангарду врага</p>
+                        </div>
+                        <div class="pers-perks pers-perks--frozen-aria">
+                            <h3 class="pers-perks__header">Морозная ария</h3>
+                            <p class="pers-perks__text">Ледяной щит уменьшает получаемый <br>урон на 20%</p>
+                        </div>
+                    </div>
+                </div>
+                <section class="pers-container-icons">
+                    <div class="pers-container-icons__wrapper">
+                        <div class="pers-icon pers-icon--one active" data-slide="0">
+                        </div>
+                        <div class="pers-icon pers-icon--two" data-slide="1">
+                        </div>
+                        <div class="pers-icon pers-icon--three" data-slide="2">
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section class="m-page-descr">
+                <h2 class="m-page-descr__text visually-hidden">Промо-текст к описанию персонажа</h2>
+                <div class="m-page-descr__wrapper">
+                    <p class="m-page-descr__text">60 наемников с неповторимой историей и сотни возможностей для
+                        построения
+                        команды ждут тебя! Система связей между персонажами — важная часть игрового сюжета и тонкий
+                        механизм
+                        настройки боевого отряда. Выбери свою фракцию и получай бонусы к мощи!
                     </p>
-                </div>
-                <div class="pers-perks pers-perks--winter">
-                    <h3 class="pers-perks__header">Конец зимы</h3>
-                    <p class="pers-perks__text">360% урона авангарду врага</p>
-                </div>
-                <div class="pers-perks pers-perks--frozen-aria">
-                    <h3 class="pers-perks__header">Морозная ария</h3>
-                    <p class="pers-perks__text">Ледяной щит уменьшает получаемый <br>урон на 20%</p>
-                </div>
-            </div>
-            </div>
-            <section class="pers-container-icons">
-                <div class="pers-container-icons__wrapper">
-                    <div class="pers-icon pers-icon--one active"  data-slide="0">
-                    </div>
-                    <div class="pers-icon pers-icon--two"  data-slide="1">
-                    </div>
-                    <div class="pers-icon pers-icon--three" data-slide="2">
-                    </div>
+                    <nav class="next-slide-btn next-slide-btn--down"></nav>
                 </div>
             </section>
-        </section>
-        <section class="m-page-descr">
-            <h2 class="m-page-descr__text visually-hidden">Промо-текст к описанию персонажа</h2>
-            <div class="m-page-descr__wrapper">
-                <p class="m-page-descr__text">60 наемников с неповторимой историей и сотни возможностей для построения
-                    команды ждут тебя! Система связей между персонажами — важная часть игрового сюжета и тонкий механизм
-                    настройки боевого отряда. Выбери свою фракцию и получай бонусы к мощи!
-                </p>
-                <nav class="next-slide-btn next-slide-btn--down"></nav>
-            </div>
-        </section>
+        </div>
     </div>
-</section>
-    <section class="personal-card personal-card--two owl-slide">
-        <nav class="next-slide-btn next-slide-btn--preview owl-prev"></nav>
-        <nav class="next-slide-btn next-slide-btn--next owl-next"></nav>
+    <div class="item personal-card personal-card--two">
         <h2 class="personal-card__text visually-hidden">Описание персонажа Памела</h2>
         <div class="personal-card__wrapper">
             <div class="pers-card-logo">
@@ -130,7 +129,8 @@
                     <div class="pers-class-block">
                         <p class="pers-class-text  pers-class-text--purple">Союз просвященных</p>
                         <div class="pers-descr">
-                            <p class="pers-descr__text">Памела — супруга древнего огненного дракона, одна из первых овладела магией. Никто не знает, на чьей стороне она сражается на самом деле.
+                            <p class="pers-descr__text">Памела — супруга древнего огненного дракона, одна из первых
+                                овладела магией. Никто не знает, на чьей стороне она сражается на самом деле.
                             </p>
                         </div>
                         <div class="pers-perks pers-perks--black-breath">
@@ -145,9 +145,9 @@
                 </div>
                 <section class="pers-container-icons">
                     <div class="pers-container-icons__wrapper">
-                        <div class="pers-icon pers-icon--one active"  data-slide="0">
+                        <div class="pers-icon pers-icon--one active" data-slide="0">
                         </div>
-                        <div class="pers-icon pers-icon--two"  data-slide="1">
+                        <div class="pers-icon pers-icon--two" data-slide="1">
                         </div>
                         <div class="pers-icon pers-icon--three" data-slide="2">
                         </div>
@@ -157,18 +157,18 @@
             <section class="m-page-descr">
                 <h2 class="m-page-descr__text visually-hidden">Промо-текст к описанию персонажа</h2>
                 <div class="m-page-descr__wrapper">
-                    <p class="m-page-descr__text">60 наемников с неповторимой историей и сотни возможностей для построения
-                        команды ждут тебя! Система связей между персонажами — важная часть игрового сюжета и тонкий механизм
+                    <p class="m-page-descr__text">60 наемников с неповторимой историей и сотни возможностей для
+                        построения
+                        команды ждут тебя! Система связей между персонажами — важная часть игрового сюжета и тонкий
+                        механизм
                         настройки боевого отряда. Выбери свою фракцию и получай бонусы к мощи!
                     </p>
                     <nav class="next-slide-btn next-slide-btn--down"></nav>
                 </div>
             </section>
         </div>
-    </section>
-    <section class="personal-card personal-card--three owl-slide">
-        <nav class="next-slide-btn next-slide-btn--preview owl-prev"></nav>
-        <nav class="next-slide-btn next-slide-btn--next owl-next"></nav>
+    </div>
+    <div class="item personal-card personal-card--three">
         <h2 class="personal-card__text visually-hidden">Описание персонажа Ллейн</h2>
         <div class="personal-card__wrapper">
             <div class="pers-card-logo">
@@ -184,7 +184,8 @@
                     <div class="pers-class-block">
                         <p class="pers-class-text pers-class-text--yellow">Цитадель небожителей</p>
                         <div class="pers-descr">
-                            <p class="pers-descr__text">Зверолюд Ллейн выбрал кровавый путь наемного убийцы в тайной организации "Покров". Его прозвали “Дикий клинок” из-за жестокости и скорости.
+                            <p class="pers-descr__text">Зверолюд Ллейн выбрал кровавый путь наемного убийцы в тайной
+                                организации "Покров". Его прозвали “Дикий клинок” из-за жестокости и скорости.
                             </p>
                         </div>
                         <div class="pers-perks pers-perks--wild-cut">
@@ -199,9 +200,9 @@
                 </div>
                 <section class="pers-container-icons">
                     <div class="pers-container-icons__wrapper">
-                        <div class="pers-icon pers-icon--one active"  data-slide="0">
+                        <div class="pers-icon pers-icon--one active" data-slide="0">
                         </div>
-                        <div class="pers-icon pers-icon--two"  data-slide="1">
+                        <div class="pers-icon pers-icon--two" data-slide="1">
                         </div>
                         <div class="pers-icon pers-icon--three" data-slide="2">
                         </div>
@@ -211,15 +212,73 @@
             <section class="m-page-descr">
                 <h2 class="m-page-descr__text visually-hidden">Промо-текст к описанию персонажа</h2>
                 <div class="m-page-descr__wrapper">
-                    <p class="m-page-descr__text">60 наемников с неповторимой историей и сотни возможностей для построения
-                        команды ждут тебя! Система связей между персонажами — важная часть игрового сюжета и тонкий механизм
+                    <p class="m-page-descr__text">60 наемников с неповторимой историей и сотни возможностей для
+                        построения
+                        команды ждут тебя! Система связей между персонажами — важная часть игрового сюжета и тонкий
+                        механизм
                         настройки боевого отряда. Выбери свою фракцию и получай бонусы к мощи!
                     </p>
                     <nav class="next-slide-btn next-slide-btn--down"></nav>
                 </div>
             </section>
         </div>
+    </div>
+</div>
+<div class="video-block">
+    <div class="video-block__wrapper">
+        <div class="pers-card-logo">
+            <div class="pers-card-logo__img-container pers-card-logo__img-container--video">
+                <img src="../img/3_VIDEO_head.png" alt="Многочисленные pvp события">
+            </div>
+        </div>
+    </div>
+        <video class="video-game" controls  autoplay loop>
+            <source src="img/bg.mp4" type="video/mp4">
+            <source src="img/bg.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
+    <section class="m-page-descr m-page-descr--video">
+        <h2 class="m-page-descr__text visually-hidden">Промо-текст к описанию видео</h2>
+        <div class="m-page-descr__wrapper m-page-descr__wrapper--video-wrapper">
+            <p class="m-page-descr__text m-page-descr__text--video">Стань самым сильным в турнирах и накажи противников с других серверов в кросс-серверных сражениях.
+                Занимай места в PvP- и PvE-топах и получай эксклюзивные награды и доступ к магазинам для избранных!
+            </p>
+        </div>
     </section>
-</section>
+    <div class="video-play-button"></div>
+    </div>
+<div class="mount-block">
+    <h2 class="mount-block__text visually-hidden">Способы прокачки персонажей</h2>
+    <div class="mount-block__wrapper">
+        <div class="pers-card-logo">
+            <div class="pers-card-logo__img-container">
+                <img src="img/4_MOUNT_head.png" alt="Многогранная прокачка">
+            </div>
+        </div>
+        <section class="mount-container-text">
+            <div class="mount-container-text__left-side">
+                <div class="mount-container-text__img-container">
+                    <img src="img/4_MOUNT_rating_30000.png">
+                </div>
+                <p class="mount-container__descr">1 уровень</p>
+            </div>
+            <div class="mount-container-text__right-side">
+                <div class="mount-container__img-container">
+                    <img src="img/4_MOUNT_rating_150000.png">
+                </div>
+                <p class="mount-container__descr">50 уровень</p>
+            </div>
+        </section>
+        <section class="m-page-descr">
+            <h2 class="m-page-descr__text visually-hidden">Промо-текст к описанию персонажа</h2>
+            <div class="m-page-descr__wrapper">
+                <p class="m-page-descr__text">Пройди десятки элитных данжей, собери крепкие доспехи и сильнейшее оружие и приручи верных маунтов. Добывай ценные ресурсы для максимальной прокачки снаряжения и отряда: развивай скиллы, применяй древние кодексы и собирай уникальные комбинации!
+                    Выработай свою стратегию боя и выбери ключевые умения для победы над врагами!
+                </p>
+                <nav class="next-slide-btn next-slide-btn--down"></nav>
+            </div>
+        </section>
+    </div>
+</div>
 </body>
 </html>
