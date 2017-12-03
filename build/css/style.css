@@ -187,6 +187,9 @@
           transform: rotate(-90deg);
   height: 88px;
 }
+.play-button--footer {
+  margin-top: 20px;
+}
 .m-page-descr {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -456,6 +459,15 @@
           flex-direction: column;
   margin-left: auto;
 }
+.pers-container-icons__wrapper--footer-block {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 .pers-icon {
   position: relative;
   margin-left: auto;
@@ -478,6 +490,74 @@
 }
 .pers-icon--one:active:before {
   background-image: url("../img/2_CHARS_icon_Isolda_active.png");
+}
+.pers-icon--fb {
+  width: 83px;
+  height: 96px;
+}
+.pers-icon--fb:before {
+  content: " ";
+  background-image: url("../img/5_FOOTER_btn_fb_normal.png");
+  width: 83px;
+  height: 96px;
+  position: absolute;
+}
+.pers-icon--fb:hover:before {
+  background-image: url("../img/5_FOOTER_btn_fb_hover.png");
+}
+.pers-icon--fb:active:before {
+  background-image: url("../img/5_FOOTER_btn_fb_active.png");
+}
+.pers-icon--vk {
+  width: 83px;
+  height: 96px;
+}
+.pers-icon--vk:before {
+  content: " ";
+  background-image: url("../img/5_FOOTER_btn_vk_normal.png");
+  width: 83px;
+  height: 96px;
+  position: absolute;
+}
+.pers-icon--vk:hover:before {
+  background-image: url("../img/5_FOOTER_btn_vk_hover.png");
+}
+.pers-icon--vk:active:before {
+  background-image: url("../img/5_FOOTER_btn_vk_active.png");
+}
+.pers-icon--odnokl {
+  width: 83px;
+  height: 96px;
+}
+.pers-icon--odnokl:before {
+  content: " ";
+  background-image: url("../img/5_FOOTER_btn_ok_normal.png");
+  width: 83px;
+  height: 96px;
+  position: absolute;
+}
+.pers-icon--odnokl:hover:before {
+  background-image: url("../img/5_FOOTER_btn_ok_hover.png");
+}
+.pers-icon--odnokl:active:before {
+  background-image: url("../img/5_FOOTER_btn_ok_active.png");
+}
+.pers-icon--mailru {
+  width: 83px;
+  height: 96px;
+}
+.pers-icon--mailru:before {
+  content: " ";
+  background-image: url("../img/5_FOOTER_btn_mail_normal.png");
+  width: 83px;
+  height: 96px;
+  position: absolute;
+}
+.pers-icon--mailru:hover:before {
+  background-image: url("../img/5_FOOTER_btn_mail_hover.png");
+}
+.pers-icon--mailru:active:before {
+  background-image: url("../img/5_FOOTER_btn_mail_active.png");
 }
 .pers-icon--two {
   width: 140px;
@@ -513,6 +593,13 @@
 .pers-icon--three:active:before {
   background-image: url("../img/2_CHARS_icon_Lleyn_active.png");
 }
+.pers-icon--footer {
+  width: 84px;
+  height: 87px;
+}
+.pers-container-icons--footer {
+  margin: 0 auto;
+}
 .video-block {
   display: inline-block;
   width: 100%;
@@ -539,7 +626,7 @@
 .video-game {
   width: 100%;
   position: relative;
-  margin-top: -164px;
+  margin-top: -204px;
 }
 .next-slide-btn--video {
   top: 0;
@@ -570,6 +657,8 @@
   width: 940px;
   height: 45px;
   z-index: 349;
+  margin-top: -19px;
+  margin-bottom: 29px;
 }
 .m-page-descr--video {
   margin-top: -199px;
@@ -681,6 +770,65 @@
   text-align: center;
   margin-top: -18px;
   display: block;
+}
+.footer-block {
+  display: block;
+  background-image: url("../img/5_FOOTER_BG.jpg");
+  background-color: #0d3349;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.footer-block__wrapper {
+  max-width: 51%;
+  margin: 0 auto;
+}
+.footer-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 130px;
+}
+.footer-header__wrapper {
+  margin: 0 auto;
+  margin-top: 16px;
+  margin-bottom: 11px;
+}
+.footer-header__img-container {
+  width: auto;
+  height: auto;
+  padding-bottom: 58px;
+}
+.footer-header img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  display: block;
+}
+.social-networks__wrapper {
+  margin: 0 auto;
+}
+.social-networks__text {
+  font-size: 24px;
+  color: #f9f4e9;
+  line-height: 1.125;
+  text-align: center;
+}
+.footer-header__text-bottom,
+a {
+  font-size: 14px;
+  color: rgba(181, 181, 181, 0.502);
+  line-height: 1.489;
+  text-align: center;
+}
+.play-button--footer {
+  margin-top: 21px;
+}
+.footer-header__img-container--bottom {
+  width: 20%;
+  margin: 0 auto;
 }
 html,
 body {

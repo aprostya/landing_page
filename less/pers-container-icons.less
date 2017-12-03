@@ -10,13 +10,17 @@
   }
 }
 
+.pers-container-icons__wrapper--footer-block {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .pers-icon {
   position: relative;
   margin-left: auto;
   margin-bottom: 23px;
   cursor: pointer;
 }
-
 
 .pers-icon--one {
   width: 140px;
@@ -33,6 +37,78 @@
   }
   &:active:before {
     background-image: url("../img/2_CHARS_icon_Isolda_active.png");
+  }
+}
+
+.pers-icon--fb {
+  width: 83px;
+  height: 96px;
+  &:before {
+    content: " ";
+    background-image: url("../img/5_FOOTER_btn_fb_normal.png");
+    width: 83px;
+    height: 96px;
+    position: absolute;
+  }
+  &:hover:before {
+    background-image: url("../img/5_FOOTER_btn_fb_hover.png");
+  }
+  &:active:before {
+    background-image: url("../img/5_FOOTER_btn_fb_active.png");
+  }
+}
+
+.pers-icon--vk {
+  width: 83px;
+  height: 96px;
+  &:before {
+    content: " ";
+    background-image: url("../img/5_FOOTER_btn_vk_normal.png");
+    width: 83px;
+    height:96px;
+    position: absolute;
+  }
+  &:hover:before {
+    background-image: url("../img/5_FOOTER_btn_vk_hover.png");
+  }
+  &:active:before {
+    background-image: url("../img/5_FOOTER_btn_vk_active.png");
+  }
+}
+
+.pers-icon--odnokl {
+  width: 83px;
+  height: 96px;
+  &:before {
+    content: " ";
+    background-image: url("../img/5_FOOTER_btn_ok_normal.png");
+    width: 83px;
+    height: 96px;
+    position: absolute;
+  }
+  &:hover:before {
+    background-image: url("../img/5_FOOTER_btn_ok_hover.png");
+  }
+  &:active:before {
+    background-image: url("../img/5_FOOTER_btn_ok_active.png");
+  }
+}
+
+.pers-icon--mailru {
+  width: 83px;
+  height: 96px;
+  &:before {
+    content: " ";
+    background-image: url("../img/5_FOOTER_btn_mail_normal.png");
+    width: 83px;
+    height: 96px;
+    position: absolute;
+  }
+  &:hover:before {
+    background-image: url("../img/5_FOOTER_btn_mail_hover.png");
+  }
+  &:active:before {
+    background-image: url("../img/5_FOOTER_btn_mail_active.png");
   }
 }
 
@@ -70,4 +146,13 @@
   &:active:before {
     background-image: url("../img/2_CHARS_icon_Lleyn_active.png");
   }
+}
+
+.pers-icon--footer {
+  width: 84px;
+  height: 87px;
+}
+
+.pers-container-icons--footer {
+  margin: 0 auto;
 }
